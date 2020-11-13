@@ -1,0 +1,202 @@
+
+@font-face {
+    font-family: 'abadi';
+    src: url(../fonts/abadi.ttf)
+}
+
+body {
+  font-family: abadi;
+}
+
+.imgBack {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .imgBack {
+    background-attachment: fixed;
+  }
+}
+
+#intro {
+  background-image: linear-gradient(to right, #012d91 , #001082);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#intro-texts {
+  font-size: 40px;
+}
+
+#info {
+  background-image: linear-gradient(to right, #608000 , #94c12b);
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+}
+
+.info-label {
+  font-size: 20px;
+}
+
+.info-value {
+  direction: ltr;
+  float: right;
+}
+
+#me {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+#sec-title {
+  font-size: 50px;
+  border-bottom: 2px solid black;
+}
+
+#int-img {
+  width: 150px;
+}
+
+.card-title {
+  font-size: 25px;
+}
+
+#highschool {
+  width: 300px;
+}
+
+#edu-label {
+  font-size: 25px;
+}
+
+#uni {
+  width: 300px;
+}
+
+#pic1 {
+  background-image: url('../img/sec1.jpg');
+  height: 75vh;
+}
+
+#about {
+  background-image: url('../img/sec3.png');
+}
+
+#rooms {
+  background-image: url('../img/det2.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1220px) {
+  #intro {
+    background-position: left top;
+  }
+}
+
+#welcomeLogo {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1220px) {
+  #welcomeLogo {
+    padding-left: 9px;
+  }
+}
+
+
+#guls {
+  width: 5%;
+}
+
+.welcomeContent {
+  padding-top: 40vh;
+}
+
+#welcomeText {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+#info {
+  background-color: rgb(32, 75, 76);
+}
+
+#infoContent {
+  min-height: 50vh;
+}
+
+#infoText {
+  color: #ffffff;
+  font-size: 1.7em;
+  text-align: right;
+  direction: rtl;
+}
+
+#aboutText1 {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+  direction: rtl;
+}
+
+#features {
+  background-color: rgb(32, 75, 76);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feature {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feature:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.2;
+}
+
+.itemText {
+  font-size: 2em;
+}
+
+.carouselImageContainer {
+}
+
+.carouselImage {
+ width: 90%;
+}
+
+#roomContent {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 100px;
+  margin: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  #roomContent {
+    padding: 10px;
+  }
+}
+
+#footer {
+  background-color: rgba(40, 40, 40);
+}
+
+#map {width: 100%;height: 400px;}
+
+.footerText {
+  font-size: 2em;
+}
+
+.socialIcon {
+  font-size: 2em;
+  margin-left: 10px;
+}
