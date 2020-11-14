@@ -80,6 +80,14 @@ body {
   width: 300px;
 }
 
+#class {
+  width: 300px;
+  /* border-radius: 5%; */
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
 #pic1 {
   background-image: url('../img/sec1.jpg');
   height: 75vh;
