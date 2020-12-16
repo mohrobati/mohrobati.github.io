@@ -1,33 +1,5 @@
-
-@font-face {
-    font-family: 'montserrat';
-    font-weight: 100;
-    src: url(../fonts/m-thin.ttf)
-}
-
-@font-face {
-  font-family: 'montserrat';
-  font-weight: 200;
-  src: url(../fonts/m-light.ttf)
-}
-
-
-@font-face {
-  font-family: 'montserrat';
-  font-weight: 400;
-  src: url(../fonts/m-med.ttf)
-}
-
-
-@font-face {
-  font-family: 'montserrat';
-  font-weight: 700;
-  src: url(../fonts/m-bold.ttf)
-}
-
-
 body {
-  font-family: montserrat;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
   color: white;
 }
 
