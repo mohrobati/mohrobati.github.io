@@ -33,178 +33,65 @@ body {
   font-size: 40px;
 }
 
-#info {
-  background-image: linear-gradient(to right, #608000 , #94c12b);
-  background-size: cover;
-  text-align: center;
-  font-size: 30px;
+#scene-tabbar, #scene-body {
+  min-height: 100vh;
 }
 
-.info-label {
-  font-size: 20px;
+#scene-tabbar {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.info-value {
-  direction: ltr;
-  float: right;
+#scene-tabbar img {
+  width: 70%;
+  border-radius: 100%;
 }
 
-#me {
-  width: 50%;
-  border-radius: 50%;
-  margin-bottom: 30px;
+#scene-tabbar .list-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#sec-title {
-  font-size: 50px;
-  border-bottom: 2px solid black;
+#scene-tabbar .list-item {
+  padding: 0.5em;
+  margin: 0.2em;
+  background-color: aqua;
+  width: 90%;
 }
 
-#int-img {
-  width: 150px;
+#scene-tabbar .list-item:hover {
+  background-color: chartreuse;
+  cursor: pointer;
 }
 
-.card-title {
-  font-size: 25px;
+#scene-body {
+  background-color: blanchedalmond;
+  height: inherit;
+  font-size: 1em;
 }
 
-#highschool {
-  width: 300px;
+#scene-body .col {
+  font-size: 1em;
 }
 
-#edu-label {
-  font-size: 25px;
+#scene-body section {
+  display: none;
 }
 
-#uni {
-  width: 300px;
+.skill-container {
+  height: 15px;
+  width: 100%;
+  background-color: aqua;
+  display: inline-block;
 }
 
-#class {
-  width: 300px;
-  /* border-radius: 5%; */
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5%;
-}
-
-#pic1 {
-  background-image: url('../img/sec1.jpg');
-  height: 75vh;
-}
-
-#about {
-  background-image: url('../img/sec3.png');
-}
-
-#rooms {
-  background-image: url('../img/det2.jpg');
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-@media only screen and (min-width: 1220px) {
-  #intro {
-    background-position: left top;
-  }
-}
-
-#welcomeLogo {
-  width: 20%;
-}
-
-@media only screen and (min-width: 1220px) {
-  #welcomeLogo {
-    padding-left: 9px;
-  }
-}
-
-
-#guls {
-  width: 5%;
-}
-
-.welcomeContent {
-  padding-top: 40vh;
-}
-
-#welcomeText {
-  color: #ffffff;
-  font-size: 2em;
-}
-
-#info {
-  background-color: rgb(32, 75, 76);
-}
-
-#infoContent {
-  min-height: 50vh;
-}
-
-#infoText {
-  color: #ffffff;
-  font-size: 1.7em;
-  text-align: right;
-  direction: rtl;
-}
-
-#aboutText1 {
-  color: #ffffff;
-  font-size: 1.5em;
-  text-align: center;
-  direction: rtl;
-}
-
-#features {
-  background-color: rgb(32, 75, 76);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.feature {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.feature:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0.2;
-}
-
-.itemText {
-  font-size: 2em;
-}
-
-.carouselImageContainer {
-}
-
-.carouselImage {
- width: 90%;
-}
-
-#roomContent {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 100px;
-  margin: 50px;
-}
-
-@media only screen and (max-width: 700px) {
-  #roomContent {
-    padding: 10px;
-  }
-}
-
-#footer {
-  background-color: rgba(40, 40, 40);
-}
-
-#map {width: 100%;height: 400px;}
-
-.footerText {
-  font-size: 2em;
-}
-
-.socialIcon {
-  font-size: 2em;
-  margin-left: 10px;
+.skill-value {
+  height: 15px;
+  width:80%;
+  background-color: rebeccapurple;
 }
