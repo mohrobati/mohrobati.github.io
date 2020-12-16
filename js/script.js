@@ -1,4 +1,4 @@
-let current = 1
+let current = 0
 
 let changeTab = () => {
     Array.from(document.querySelectorAll("#scene-body section")).forEach((el, idx) => {
