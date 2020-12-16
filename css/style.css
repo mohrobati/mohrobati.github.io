@@ -16,6 +16,7 @@ body {
   overflow: scroll;
 }
 
+
 #scene-tabbar #my-img {
   width: 70%;
   border-radius: 100%;
@@ -33,7 +34,7 @@ body {
   display: inline;
   color: black;
   font-size: 2em;
-  margin: 0 0.5em 0 0.5em;
+  margin: 0 0.4em 0 0.4em;
 }
 
 #scene-tabbar .list-view {
@@ -62,6 +63,18 @@ body {
   height: 100vh;
   overflow: scroll;
 }
+
+@media only screen and (max-width: 777px) {
+  #scene-tabbar {
+    height: 100%;
+    overflow: unset;
+  }
+  #scene-body {
+    height: 100%;
+    overflow: unset;
+  }
+}
+
 
 #scene-body .col {
   font-size: 1em;
