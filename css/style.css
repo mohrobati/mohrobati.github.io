@@ -1,11 +1,34 @@
 
 @font-face {
-    font-family: 'abadi';
-    src: url(../fonts/abadi.ttf)
+    font-family: 'montserrat';
+    font-weight: 100;
+    src: url(../fonts/m-thin.ttf)
 }
 
+@font-face {
+  font-family: 'montserrat';
+  font-weight: 200;
+  src: url(../fonts/m-light.ttf)
+}
+
+
+@font-face {
+  font-family: 'montserrat';
+  font-weight: 400;
+  src: url(../fonts/m-med.ttf)
+}
+
+
+@font-face {
+  font-family: 'montserrat';
+  font-weight: 700;
+  src: url(../fonts/m-bold.ttf)
+}
+
+
 body {
-  font-family: abadi;
+  font-family: montserrat;
+  color: white;
 }
 
 #scene-tabbar, #scene-body {
@@ -13,17 +36,32 @@ body {
 }
 
 #scene-tabbar {
-  background-color: red;
-  display: flex;
+  background: rgb(15,76,117);
+  background: linear-gradient(180deg, rgba(15,76,117,1) 0%, rgba(0,62,103,1) 53%, rgba(11,55,84,1) 100%);  display: flex;
   align-items: center;
   flex-direction: column;
   height: 100vh;
   overflow: scroll;
 }
 
-#scene-tabbar img {
+#scene-tabbar #my-img {
   width: 70%;
   border-radius: 100%;
+}
+
+.list-view img {
+  width: 40px;
+}
+
+.list-view a {
+  color: white;
+}
+
+.contact-item {
+  display: inline;
+  color: black;
+  font-size: 2em;
+  margin: 0 0.5em 0 0.5em;
 }
 
 #scene-tabbar .list-view {
@@ -36,17 +74,17 @@ body {
 #scene-tabbar .list-item {
   padding: 0.5em;
   margin: 0.2em;
-  background-color: aqua;
+  background-color: #3282b8;
   width: 90%;
 }
 
 #scene-tabbar .list-item:hover {
-  background-color: chartreuse;
+  background-color:#2b373e;
   cursor: pointer;
 }
 
 #scene-body {
-  background-color: blanchedalmond;
+  background-color: #1b262c;
   height: inherit;
   font-size: 1em;
   height: 100vh;
@@ -65,6 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 

@@ -13,22 +13,37 @@
 
 <body>
     <section id="scene">
-        <div class="row h-100">
+        <div class="row h-100 m-0 w-100">
             <div class="col-md-3 text-center pr-0" id="scene-tabbar">
-                <img src="img/me.png" class="pb-4 mt-4" alt="">
+                <img id="my-img" src="img/me.png" class="pb-4 mt-4" alt="">
+                <p style="font-weight: 700; font-size: 1.1em;">Mohammad Robati Shirzad</p>
                 <div class="list-view w-100">
                     <div class="list-item">About Me</div>
                     <div class="list-item">Experience</div>
                     <div class="list-item">Projects</div>
-                    <div class="list-item mb-4">Other</div>
+                    <div class="list-item mb-4">Hobbies</div>
+                    <div class="contact mb-4">
+                        <div class="contact-item">
+                            <a target="_blank" href="./CV.pdf"><img src="img/cv.png" alt=""></a>
+                        </div>
+                        <div class="contact-item">
+                            <a target="_blank" href="mailto:moh.robati.shirzad@gmail.com"><i
+                                    class="fa fa-envelope"></i></a>
+                        </div>
+                        <div class="contact-item">
+                            <a target="_blank" href="https://www.linkedin.com/in/mohammad-robati-shirzad-740b34194/"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-9 p-5" id="scene-body">
+            <div class="col-md-9 px-5 pt-5" id="scene-body">
                 <section id="about">
                     <p>Greetings! I am Mohammad Robati Shirzad and I am currently
-                        a Computer Engineering student at <a href="https://aut.ac.ir">AUT</a>
+                        a Computer Engineering student at <a target="_blank" href="https://aut.ac.ir">AUT</a>
                     </p>
-                    <p>I was born in a small city in the southwest of Iran. The city is famous for hosting a massive
+                    <p>I was born in a <a href="https://en.wikipedia.org/wiki/Bandar-e_Mahshahr" target="_blank">small
+                            city</a> in the southwest of Iran. The city is famous for hosting a massive
                         petroleum reservoir, and there was a refinery factory, built close to the city, where my father
                         worked as a civil engineer. Growing up in a city with numerous large factories brought up the
                         question for me, “ How large-scale systems are built ? ”.</p>
@@ -44,7 +59,7 @@
                         managed to pass all courses in the last 4 semesters with straight A's</p>
                     <p>After I entered university, I started to learn all kinds of skills related to making better
                         computer softwares. With the coding experience in many different languages, I achieved the 3rd
-                        rank among more than one thousand participants in the <a
+                        rank among more than one thousand participants in the <a target="_blank"
                             href="https://quera.ir/contest/assignments/14060/scoreboard/">SnappTrip programming
                             contest</a>, which assessed both algorithmic thinking and interface design capabilities
                         during the contest. </p>
@@ -52,7 +67,7 @@
                         distributed systems, and more generally any
                         topic which addresses the problem of building and maintaining “large-scale systems” more
                         efficiently.</p>
-                    <div class="row justify-content-center more-details">
+                    <div class="row justify-content-center more-details pb-5">
                         <div class="col">
                             <ul>Interests :
                                 <li>Software Engineering</li>
@@ -70,7 +85,8 @@
                             <br>
                             <h4>I love teaching!</h4>
                             <h6>Fortunately, I had the chance of being a TA for multiple courses
-                                during my undergraduate studies, here is the list (full details in my <a href="">CV</a>
+                                during my undergraduate studies, here is the list (full details in my
+                                <a target="_blank" href="./CV.pdf">CV</a>
                                 ):
                             </h6>
                             <ul>
@@ -82,17 +98,17 @@
                                 <li>TA - Signals And Systems (Networking Group)</li>
                             </ul>
                             <br>
-                            <div class="text-center mb-5">
-                                <img src="img/class.jpg" width="90%" alt="">
+                            <div class="text-center mt-5">
+                                <img src="img/class.jpg" width="80%" alt="">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-md-0 mt-5">
                             <h2>Work Experience: </h2>
                             <br>
                             <h4>Lead Front-End Developer @ <a href="http://utopiapp.ir" target="_blank">Utopia</a></h4>
-                            <h6>Utopia is a start-up based in Tehran and tries to address
+                            <h6 style="line-height: 20px;">Utopia is a start-up based in Tehran and tries to address
                                 various problems that Iranian farmers are struggling with.
-                                A few of my friends and I was assigned to design and implement
+                                A few of my friends and got an offer to design and implement
                                 a complete robust and error-free software system for this company.
                                 I helped Utopia in multiple areas:
                             </h6>
@@ -102,15 +118,19 @@
                                 <li>Designing the database system</li>
                                 <li>Leading a group of four people in the front-end section</li>
                             </ul>
+                            <div class="text-center">
+                                <img src="img/utopia.png" width="50%" alt="">
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section id="projects">
-                    <h3>Programming and doing different projects is the best part of
+                    <h5>Programming and working on different projects are the best parts of
                         being a student. Some of the projects that I have done can be found here :
                         (visit <a href="https://github.com/mohrobati" target="_blank">here</a> for the full list.)
-                    </h3>
-                    <div class="row">
+                        <br><br>
+                    </h5>
+                    <div class="row pb-5">
                         <div class="col-md-4 p-0">
                             <div class="col-items-container">
                                 <div class="project-card">
@@ -184,24 +204,24 @@
 
                     </div>
                 </section>
-                <section id="other">
-                    <h3>I have been playing piano since 2010.
+                <section id="hobbies">
+                    <h5>I have been playing piano since 2010.
                         <br>
                         Music is my main hobby and Jazz is my favorite Genre! <br>
                         I have released a song recently
-                        you can find it <a
+                        you can find it <a target="_blank"
                             href="https://open.spotify.com/track/0NP56wD9jIweuBGHa4cfqQ?si=KMX0OdxISDmEhsPpB0csxQ"
                             target="_blank">here</a>. <br>
-                        I also love to make videos of my playing, you can find my videos in my <a
+                        I also love to make videos of my playing, you can find my videos in my <a target="_blank"
                             href="https://www.youtube.com/channel/UC6UI_8rIRUzlImDxT_uKSnQ">youtube channel</a>. <br>
                         Since you are here, let us hear some funk! : <br>
                         <div class="text-center">
-                            <iframe class="mt-5" width="853" height="480"
+                            <iframe class="my-5" width="100%" height="500"
                                 src="https://www.youtube.com/embed/ZoP15SQmuRw" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
-                    </h3>
+                    </h5>
                 </section>
             </div>
         </div>
