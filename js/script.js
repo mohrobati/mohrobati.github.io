@@ -29,11 +29,15 @@ Array.from(document.querySelectorAll("#scene-tabbar .list-item")).forEach((el, i
         changeTab()
     })
     el.addEventListener('mouseover', () => {
-        if(current !== idx)
+        if (current !== idx)
             el.style.backgroundColor = hover
     })
     el.addEventListener('mouseout', () => {
-        if(current !== idx)
+        if (current !== idx)
             el.style.backgroundColor = unselected
     })
 })
+
+let xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://secret-wildwood-85596.herokuapp.com/", true);
+xhttp.send();
