@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+}
+
+.ins {
+    position: absolute;
+    left: 3%;
+    top: 30%;
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+}
+
+.sky {
+    height: 3000px;
+    position: fixed;
+    z-index: -10;
+}
+
+@keyframes ebb {
+    0% {left: -1%;}
+    50% {left: 0%;}
+    100% {left: -1%;}
+}
+
+.sea {
+    top: 55%;
+    position: fixed;
+    z-index: 0;
+    animation-name: ebb;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.sun {
+    top: -58%;
+    left: 20%;
+    animation-timing-function: linear;
+    position: fixed;
+    filter: hue-rotate(0deg)
+}
+
+.cloud {
+    top: 0%;
+    right: -30%;
+    animation-timing-function: linear;
+    position: fixed;
+}
+
+@keyframes tilt {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(4deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-4deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.boat {
+    bottom: 10%;
+    left: 10%;
+    position: fixed;
+    z-index: 1;
+    animation-name: tilt;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.house {
+    top: 60%;
+    right: 30%;
+    position: fixed;
+    z-index: -5;
+}
+
+.darak {
+    top: 60%;
+    right: 10%;
+    position: fixed;
+    z-index: -6;
+}
+
+.city {
+    position: fixed;
+    z-index: 5;
+    width: 170%;
+    bottom: -100%;
+}
+
+.palm1 {
+    position: fixed;
+    z-index: 4;
+    right: 10%;
+    bottom: -100%;
+}
+
+.palm2 {
+    position: fixed;
+    z-index: 4;
+    right: 10%;
+    bottom: -100%;
+}
+
+.gate {
+    position: fixed;
+    z-index: 12;
+    right: -70%;
+    bottom: -22%;
+}
+
+.tagh {
+    position: fixed;
+    z-index: 13;
+    right: 11%;
+    bottom: 27%;
+    opacity: 0;
+    filter: hue-rotate(0deg)
+}
+
+@media only screen and (max-height: 750px) {
+    .tagh {
+        position: fixed;
+        z-index: 13;
+        right: 11%;
+        bottom: 35%;
+        opacity: 0;
+        filter: hue-rotate(0deg)
+    }
+
+  }
+
+
+  @media only screen and (min-height: 750px) {
+    .sun {
+        top: -55%;
+        left: 20%;
+        animation-timing-function: linear;
+        position: fixed;
+        filter: hue-rotate(0deg);
+        width: 63%;
+    }
+
+  }
+
