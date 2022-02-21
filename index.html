@@ -15,10 +15,11 @@
         <div class="row h-100 m-0 w-100">
             <div class="col-md-4 col-lg-3 text-center px-2" id="scene-tabbar">
                 <img id="my-img" src="https://i.postimg.cc/XJywHyxv/me.png" class="pb-4 mt-4" alt="">
-                <p style="font-weight: 700; font-size: 1.1em;">Mohammad Robati Shirzad</p>
+                <p style="font-weight: 700; font-size: 1.1em;">Moh (Zoso) Robati Shirzad</p>
                 <div class="list-view w-100">
                     <div class="list-item">About Me</div>
-                    <div class="list-item">Experience</div>
+                    <div class="list-item">Research Experience</div>
+                    <div class="list-item">Other Experiences</div>
                     <div class="list-item">Projects</div>
                     <div class="list-item mb-4">Hobbies</div>
                     <div class="contact mb-4">
@@ -26,7 +27,8 @@
                             <a target="_blank" href="./CV.pdf"><img src="img/cv.png" alt=""></a>
                         </div>
                         <div class="contact-item">
-                            <a target="_blank" href="mailto:moh.robati.shirzad@gmail.com"><img src="img/env.png" alt=""></a>
+                            <a target="_blank" href="mailto:moh.robati.shirzad@gmail.com"><img src="img/env.png"
+                                    alt=""></a>
                         </div>
                         <div class="contact-item">
                             <a target="_blank" href="https://www.linkedin.com/in/mohammad-robati-shirzad-740b34194/">
@@ -38,9 +40,21 @@
             </div>
             <div class="col-md-8 col-lg-9 px-5 pt-5" id="scene-body">
                 <section id="about">
-                    <p>Greetings! I am Mohammad Robati Shirzad and I am currently
-                        an ECE MASc student at the <a target="_blank" href="https://uwaterloo.ca/">University of Waterloo</a>
+                    <p>Greetings! I'm Moh (Zoso) Robati Shirzad and I'm
+                        an ECE MASc student at the <a target="_blank" href="https://uwaterloo.ca/">University of
+                            Waterloo</a>
                     </p>
+                    <div class="row justify-content-center more-details">
+                        <div class="col">
+                            <ul>Interests :
+                                <li>Automated Program Synthesis / Repair</li>
+                                <li>Compiler / Programming Language Design</li>
+                                <li>Software Engineering / Testing</li>
+                                <li>Human-Computer Interaction</li>
+                                <li>Distributed Systems</li>
+                            </ul>
+                        </div>
+                    </div>
                     <p>I was born in a <a href="https://en.wikipedia.org/wiki/Bandar-e_Mahshahr" target="_blank">small
                             city</a> in the southwest of Iran. The city is famous for hosting a massive
                         petroleum reservoir, and there was a refinery factory, built close to the city, where my father
@@ -53,33 +67,67 @@
                         university. My goal first was to get a B.S. in computer engineering and gain the required
                         knowledge and skills to make a difference in the tech area and build systems that will benefit
                         so many people.</p>
-                    <p>I got ranked in the top 0.5% in Iran's National University Entrance Exam, and I am currently in
-                        the beginning of the 8th semester at AUT studying Computer Engineering. My current GPA is 18.23/20 and I have
-                        managed to pass all courses in the last 5 semesters with straight A's</p>
-                    <p>After I entered university, I started to learn all kinds of skills related to making better
-                        computer softwares. With the coding experience in many different languages, I achieved the 3rd
-                        rank among more than one thousand participants in the <a target="_blank"
-                            href="https://quera.ir/contest/assignments/14060/scoreboard/">SnappTrip programming
-                            contest</a>, which assessed both algorithmic thinking and interface design capabilities
-                        during the contest. </p>
-                    <p>After my undergraduate studies, I decided to pursue a research career in Software Engineering abroad
-                        to acquire knowledge in the newest and the most up-to-date methods and tools in Software Engineering and be able to 
-                        manage a robust and reliable large-scale software system.</p>
-                    <p>I was very fortunate to be accepted in a two-year master's program at the University of Waterloo as it is one of the top
-                        25 universities for Computer Engineering in the whole world. My research is under the supervision of 
-                        <a target="_blank" href="https://www.patricklam.ca/">Dr. Patrick Lam</a> 
-                        and on the subject of program analysis and verification.</p>
-                    <div class="row justify-content-center more-details pb-5">
-                        <div class="col">
-                            <ul>Interests :
-                                <li>Software Engineering</li>
-                                <li>Software Tools</li>
-                                <li>Compilers / PL</li>
-                                <li>HCI / Augmented Reality</li>
-                                <li>Distributed Systems</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <p>I got ranked in the top 0.5% in Iran's National University Entrance Exam, and I decided to go to
+                        AUT studying Computer Engineering.
+                        I finished my undergrad studies there, and managed to pass all courses in the last 5 semesters
+                        with straight A's</p>
+                    <p>After my undergraduate studies, I decided to pursue a research career in Software Engineering
+                        abroad
+                        to acquire knowledge in the state-of-the-art methods and tools in Software Engineering and be
+                        able to
+                        design a robust and reliable large-scale software system.</p>
+                    <p>I was very fortunate to be accepted in a two-year master's program at the University of Waterloo
+                        as it is one of the top
+                        25 universities for Computer Engineering in the whole world. My research is under the
+                        supervision of
+                        <a target="_blank" href="https://www.patricklam.ca/">Dr. Patrick Lam</a>
+                        and on the subject of Computer Software.
+                    </p>
+                    <p>I'm set to finish my grad studies by Fall 2023.</p>
+                    <br>
+                    <br>
+                </section>
+                <section id="research">
+                    <ul>
+                        <li>
+                            <h4>Synthesizing Boolean Expressions Based On Several Constraints Using Counterexample
+                                Guided Inductive Synthesis Concepts</h4>
+                            <h6>Fall 2021 - ECE750T28 Project</h6>
+                            <h6>University of Waterloo (<a href="https://mohrobati.github.io/papers/ece750.pdf">read the paper?</a>)</h6>
+                            <br>
+                            <p>Abstract— A Program Synthesis tool automates the writing of computer programs based on a
+                                set of specifications and constraints provided to the tool. In this paper, we outline
+                                the development of a Boolean expression synthesis tool based upon the JS-Buxter tool
+                                developed by author Mohammad Robati Shirzad. This automated program repair tool was
+                                developed for resolving JavaScript bugs. It included support for the IF-CC bug fix
+                                pattern, which focused on bugs related to if-condition statements. The JS-Buxter tool
+                                used a “Brute-Force” approach, but it was clear that there could be a way to resolve
+                                such bugs more efficiently. Since if-condition statements are activated based on a
+                                Boolean result of some given variable(s), a Boolean expression synthesis tool would be
+                                helpful in improving performance for the IF-CC bug fix pattern. This project is focused
+                                on our development of such a Boolean expression synthesis tool. We provide background
+                                information for the software and theoretical concepts we used in development of our
+                                Boolean Expression Synthesis tool. These concepts are (in part) based upon the
+                                Counterexample Guided Inductive Synthesis (CEGIS) approach. We developed two approaches
+                                for program synthesis: “Feedback Only”, and “Feedback + Initial Probing”. We sought to
+                                establish that these approaches achieved Boolean program synthesis much faster than a
+                                “Brute-Force” Approach. All three approaches would take a set of variables and a set of
+                                constraints as input. We collected data for all three approaches, for different levels
+                                of expression depth. We analyzed the results of this data, and determined that these
+                                feedback-based approaches achieved Boolean expression synthesis significantly faster
+                                (more than 10 times faster for large inputs) than the “Brute-Force” approach.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <h4>JS-Buxter: A program repair framework for Javascript</h4>
+                            <h6>Spring 2021 - Undergraduate Honor Thesis</h6>
+                            <h6>Amirkabir University of Technology(<a href="https://github.com/mohrobati/JS-Buxter">use the tool?</a>)</h6>
+                            <br>
+                            <p>In this project we have developed a tool written in Python which gets a buggy Javascript file with a set of tests as an input, and as the output it gives out the repaired program that can pass all the tests.</p>
+                            <img src="./img/jsbuxter.png" width="600" alt="">
+                            <br>
+                        </li>
+                    </ul>
                 </section>
                 <section id="experience">
                     <div class="row justify-content-around">
