@@ -4,7 +4,11 @@ body {
 }
 
 #scene-tabbar, #scene-body {
-  min-height: 100vh;
+  min-height: 125vh;
+}
+
+#scene-body::-webkit-scrollbar, #scene-tabbar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 #scene-tabbar {
@@ -14,6 +18,7 @@ body {
   flex-direction: column;
   height: 100vh;
   overflow: scroll;
+  scrollbar-width: none;
 }
 
 
@@ -62,19 +67,8 @@ body {
   font-size: 1em;
   height: 100vh;
   overflow: scroll;
+  scrollbar-width: none;
 }
-
-@media only screen and (max-width: 777px) {
-  #scene-tabbar {
-    height: 100%;
-    overflow: unset;
-  }
-  #scene-body {
-    height: 100%;
-    overflow: unset;
-  }
-}
-
 
 #scene-body .col {
   font-size: 1em;

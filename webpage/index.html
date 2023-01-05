@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moh Robati</title>
+</head>
+
+<body id="body" style="zoom: 0.8;">
+    <section id="scene">
+        <div class="row h-100 m-0 w-100">
+            <div class="col-4 text-center px-2" id="scene-tabbar">
+                <img id="my-img" src="https://i.postimg.cc/XJywHyxv/me.png" class="pb-4 mt-4" alt="">
+                <p style="font-weight: 700; font-size: 1.1em;">Moh (Zoso) Robati Shirzad</p>
+                <div class="list-view w-100">
+                    <div class="list-item">About Me</div>
+                    <div class="list-item">Research Experience</div>
+                    <div class="list-item">Other Experiences</div>
+                    <div class="list-item">Projects</div>
+                    <div class="list-item mb-4">Hobbies</div>
+                    <div class="contact mb-4">
+                        <div class="contact-item">
+                            <a target="_blank" href="./CV.pdf"><img src="img/cv.png" alt=""></a>
+                        </div>
+                        <div class="contact-item">
+                            <a target="_blank" href="mailto:moh.robati.shirzad@gmail.com"><img src="img/env.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="contact-item">
+                            <a target="_blank" href="https://www.linkedin.com/in/mohammad-robati-shirzad-740b34194/">
+                                <img src="img/in.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 px-5 pt-5" id="scene-body">
+                <section id="about">
+                    <p>Greetings! I'm Moh (Zoso) Robati Shirzad and I'm
+                        an ECE MASc student at the <a target="_blank" href="https://uwaterloo.ca/">University of
+                            Waterloo</a>
+                    </p>
+                    <div class="row justify-content-center more-details">
+                        <div class="col">
+                            <ul>Interests :
+                                <li>Automated Program Synthesis / Repair</li>
+                                <li>Compiler / Programming Language Design</li>
+                                <li>Software Engineering / Testing</li>
+                                <li>Human-Computer Interaction</li>
+                                <li>Distributed Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>I was born in a <a href="https://en.wikipedia.org/wiki/Bandar-e_Mahshahr" target="_blank">small
+                            city</a> in the southwest of Iran. The city is famous for hosting a massive
+                        petroleum reservoir, and there was a refinery factory, built close to the city, where my father
+                        worked as a civil engineer. Growing up in a city with numerous large factories brought up the
+                        question for me, “ How large-scale systems are built ? ”.</p>
+                    <p>I grew up with the dream of building massive systems that involve so many people to build and
+                        maintain them. Despite the fact that the people living in my city back then usually pursued a
+                        profession related to extracting oil, I was more interested in technology and computer systems.
+                        During high school, I was introduced to computer engineering as a subject to study at
+                        university. My goal first was to get a B.S. in computer engineering and gain the required
+                        knowledge and skills to make a difference in the tech area and build systems that will benefit
+                        so many people.</p>
+                    <p>I got ranked in the top 0.5% in Iran's National University Entrance Exam, and I decided to go to
+                        AUT studying Computer Engineering.
+                        I finished my undergrad studies there, and managed to pass all courses in the last 5 semesters
+                        with straight A's</p>
+                    <p>After my undergraduate studies, I decided to pursue a research career in Software Engineering
+                        abroad
+                        to acquire knowledge in the state-of-the-art methods and tools in Software Engineering and be
+                        able to
+                        design a robust and reliable large-scale software system.</p>
+                    <p>I was very fortunate to be accepted in a two-year master's program at the University of Waterloo
+                        as it is one of the top
+                        25 universities for Computer Engineering in the whole world. My research is under the
+                        supervision of
+                        <a target="_blank" href="https://www.patricklam.ca/">Dr. Patrick Lam</a>
+                        and on the subject of Computer Software.
+                    </p>
+                    <p>I'm set to finish my grad studies by Fall 2023.</p>
+                    <br>
+                    <br>
+                </section>
+                <section id="research">
+                    <ul>
+                        <li>
+                            <h4>Synthesizing Boolean Expressions Based On Several Constraints Using Counterexample
+                                Guided Inductive Synthesis Concepts</h4>
+                            <h6>Fall 2021 - ECE750T28 Project</h6>
+                            <h6>University of Waterloo (<a href="https://mohrobati.github.io/papers/ece750.pdf">read the paper?</a>)</h6>
+                            <br>
+                            <p>Abstract— A Program Synthesis tool automates the writing of computer programs based on a
+                                set of specifications and constraints provided to the tool. In this paper, we outline
+                                the development of a Boolean expression synthesis tool based upon the JS-Buxter tool
+                                developed by author Mohammad Robati Shirzad. This automated program repair tool was
+                                developed for resolving JavaScript bugs. It included support for the IF-CC bug fix
+                                pattern, which focused on bugs related to if-condition statements. The JS-Buxter tool
+                                used a “Brute-Force” approach, but it was clear that there could be a way to resolve
+                                such bugs more efficiently. Since if-condition statements are activated based on a
+                                Boolean result of some given variable(s), a Boolean expression synthesis tool would be
+                                helpful in improving performance for the IF-CC bug fix pattern. This project is focused
+                                on our development of such a Boolean expression synthesis tool. We provide background
+                                information for the software and theoretical concepts we used in development of our
+                                Boolean Expression Synthesis tool. These concepts are (in part) based upon the
+                                Counterexample Guided Inductive Synthesis (CEGIS) approach. We developed two approaches
+                                for program synthesis: “Feedback Only”, and “Feedback + Initial Probing”. We sought to
+                                establish that these approaches achieved Boolean program synthesis much faster than a
+                                “Brute-Force” Approach. All three approaches would take a set of variables and a set of
+                                constraints as input. We collected data for all three approaches, for different levels
+                                of expression depth. We analyzed the results of this data, and determined that these
+                                feedback-based approaches achieved Boolean expression synthesis significantly faster
+                                (more than 10 times faster for large inputs) than the “Brute-Force” approach.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <h4>JS-Buxter: A program repair framework for Javascript</h4>
+                            <h6>Spring 2021 - Undergraduate Honor Thesis</h6>
+                            <h6>Amirkabir University of Technology(<a href="https://github.com/mohrobati/JS-Buxter">use the tool?</a>)</h6>
+                            <br>
+                            <p>In this project we have developed a tool written in Python which gets a buggy Javascript file with a set of tests as an input, and as the output it gives out the repaired program that can pass all the tests.</p>
+                            <img src="./img/jsbuxter.png" width="600" alt="">
+                            <br>
+                        </li>
+                    </ul>
+                </section>
+                <section id="experience">
+                    <div class="row justify-content-around">
+                        <div class="col-md-6">
+                            <h2>Teaching Experience: </h2>
+                            <br>
+                            <h4>I love teaching!</h4>
+                            <h6>Fortunately, I had the chance of being a TA for multiple courses
+                                during my undergraduate studies, here is the list (full details in my
+                                <a target="_blank" href="./CV.pdf">CV</a>
+                                ):
+                            </h6>
+                            <ul>
+                                <li>Instructor - Web Design Fundamentals</li>
+                                <li>TA - Advanced Programming (Software Group)</li>
+                                <li>TA - Principles of Compiler Design (Software Group)</li>
+                                <li>TA - Principles of Database Design (Software Group)</li>
+                                <li>TA - Computational Intelligence (AI Group)</li>
+                                <li>TA - Signals And Systems (Networking Group)</li>
+                            </ul>
+                            <br>
+                            <div class="text-center mt-3">
+                                <img src="./img/class.jpg" width="80%" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-md-0 mt-5">
+                            <h2>Work Experience: </h2>
+                            <br>
+                            <h4>Lead Front-End Developer @ <a href="http://utopiapp.ir" target="_blank">Utopia</a></h4>
+                            <h6 style="line-height: 20px;">Utopia is a start-up based in Tehran and tries to address
+                                various problems that Iranian farmers are struggling with.
+                                A few of my friends and got an offer to design and implement
+                                a complete robust and error-free software system for this company.
+                                I helped Utopia in multiple areas:
+                            </h6>
+                            <ul>
+                                <li>Requirements elicitation</li>
+                                <li>Helping with the right project management scheme</li>
+                                <li>Designing the database system</li>
+                                <li>Leading a group of four people in the front-end section</li>
+                            </ul>
+                            <div class="text-center">
+                                <img src="https://i.postimg.cc/qvLQynZV/utopia.png" width="50%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects">
+                    <h5>Programming and working on different projects are the best parts of
+                        being a student. Some of the projects that I have done can be found here :
+                        (visit <a href="https://github.com/mohrobati" target="_blank">here</a> for the full list.)
+                        <br><br>
+                    </h5>
+                    <div class="row pb-5">
+                        <div class="col-md-4 p-0">
+                            <div class="col-items-container">
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/CompilerProject" target="_blank">
+                                        <video playsinline autoplay muted loop>
+                                            <source src="img/compiler.MP4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </a>
+                                </div>
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/JTanks" target="_blank">
+                                        <video playsinline autoplay muted loop>
+                                            <source src="img/jtanks.MP4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </a>
+                                </div>
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/Java-Download-Manager" target="_blank">
+                                        <img src="https://i.postimg.cc/52N8crpT/jdm.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/DeterminantCUDA" target="_blank">
+                                        <img src="img/cuda.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <div class="col-items-container">
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/RacketPLDesign" target="_blank">
+                                        <img src="img/pl.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/MortalKombatUnityDemo" target="_blank">
+                                        <video playsinline autoplay muted loop>
+                                            <source src="img/mortal.MP4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </a>
+                                </div>
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/RubixCube" target="_blank">
+                                        <img src="img/rubix.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-0">
+                            <div class="col-items-container">
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/setarehKavir" target="_blank">
+                                        <video playsinline autoplay muted loop>
+                                            <source src="img/ar.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </a>
+                                </div>
+                                <div class="project-card">
+                                    <a href="https://github.com/mohrobati/0-1KnapsackAndTSPwithEvolutionaryAlgorithm"
+                                        target="_blank">
+                                        <img src="img/evol.JPG" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="hobbies">
+                    <h5>I have been playing piano since 2010.
+                        <br>
+                        Music is my main hobby and Jazz is my favorite Genre! <br>
+                        I have released a song recently
+                        you can find it <a target="_blank"
+                            href="https://open.spotify.com/track/0NP56wD9jIweuBGHa4cfqQ?si=KMX0OdxISDmEhsPpB0csxQ"
+                            target="_blank">here</a>. <br>
+                        I also love to make videos of my playing, you can find my videos in my <a target="_blank"
+                            href="https://www.youtube.com/channel/UC6UI_8rIRUzlImDxT_uKSnQ">youtube channel</a>. <br>
+                        Since you are here, let us hear some funk! : <br>
+                        <div class="text-center">
+                            <iframe class="my-5" width="100%" height="500"
+                                src="https://www.youtube.com/embed/ZoP15SQmuRw" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </h5>
+                </section>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
