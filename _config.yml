@@ -1,0 +1,11 @@
+title: Mohrobati
+description: AI, Software Engineering, and Research Notes
+url: "https://mohrobati.github.io"
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed
