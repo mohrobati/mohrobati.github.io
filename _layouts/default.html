@@ -2,32 +2,239 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
         {{ page.title }} | {{ site.title }}
     </title>
 
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        :root {
+            --bg: #fafafa;
+            --fg: #1a1a1a;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --code-bg: #f3f4f6;
+            --max-width: 720px;
+            --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+            --font-mono: "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            font-family: var(--font);
+            color: var(--fg);
+            background: var(--bg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Header */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(250, 250, 250, 0.85);
+            -webkit-backdrop-filter: saturate(180%) blur(8px);
+            backdrop-filter: saturate(180%) blur(8px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0.9rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-brand {
+            font-weight: 700;
+            color: var(--fg);
+            font-size: 1.05rem;
+            letter-spacing: -0.01em;
+        }
+        .nav-brand:hover { text-decoration: none; }
+        .nav-links { display: flex; gap: 1.25rem; }
+        .nav-links a {
+            color: var(--muted);
+            font-size: 0.95rem;
+            transition: color 0.15s ease;
+        }
+        .nav-links a:hover { color: var(--fg); text-decoration: none; }
+
+        /* Content */
+        .content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        .page-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin: 0 0 2.5rem;
+        }
+
+        /* Blog list */
+        .blog-list { display: flex; flex-direction: column; }
+        .post-card {
+            padding: 1.75rem 0;
+            border-top: 1px solid var(--border);
+            transition: transform 0.15s ease;
+        }
+        .post-card:first-of-type { border-top: none; }
+        .post-card__title {
+            margin: 0 0 0.35rem;
+            font-size: 1.4rem;
+            font-weight: 650;
+            letter-spacing: -0.01em;
+        }
+        .post-card__title a { color: var(--fg); }
+        .post-card__title a:hover { color: var(--accent); text-decoration: none; }
+        .post-card__date {
+            margin: 0 0 0.6rem;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+        .post-card__excerpt { margin: 0; color: #444; }
+
+        /* Post */
+        .post__header { margin-bottom: 2.5rem; }
+        .post__title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.15;
+            margin: 0 0 0.5rem;
+        }
+        .post__date {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .post__content { font-size: 1.075rem; line-height: 1.75; }
+        .post__content h2 {
+            font-size: 1.6rem;
+            margin: 2rem 0 0.75rem;
+            letter-spacing: -0.01em;
+        }
+        .post__content h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .post__content h4 { font-size: 1.1rem; margin: 1.25rem 0 0.5rem; }
+        .post__content p { margin: 0 0 1.25rem; }
+        .post__content ul, .post__content ol { margin: 0 0 1.25rem; padding-left: 1.5rem; }
+        .post__content li { margin: 0.3rem 0; }
+        .post__content blockquote {
+            margin: 1.5rem 0;
+            padding: 0.6rem 1.25rem;
+            border-left: 3px solid var(--accent);
+            color: var(--muted);
+            background: var(--code-bg);
+            border-radius: 0 4px 4px 0;
+        }
+        .post__content img { max-width: 100%; height: auto; border-radius: 6px; }
+        .post__content code {
+            font-family: var(--font-mono);
+            font-size: 0.9em;
+            background: var(--code-bg);
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+        }
+        .post__content pre {
+            background: #1e1e2e;
+            color: #e5e7eb;
+            padding: 1.1rem 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 0 0 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .post__content pre code { background: none; padding: 0; color: inherit; }
+        .post__content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+        .post__content a { text-decoration: underline; text-underline-offset: 2px; }
+        .post__content table {
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            width: 100%;
+            font-size: 0.95rem;
+        }
+        .post__content th, .post__content td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+            text-align: left;
+        }
+        .post__content th { background: var(--code-bg); font-weight: 600; }
+
+        /* Rouge syntax highlighting */
+        .highlight { background: #1e1e2e; border-radius: 8px; margin: 0 0 1.5rem; overflow-x: auto; }
+        .highlight pre { margin: 0; }
+        .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #7c7f93; font-style: italic; }
+        .highlight .err { color: #f38ba8; }
+        .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .ow { color: #cba6f7; }
+        .highlight .kt, .highlight .nc, .highlight .no { color: #fab387; }
+        .highlight .o { color: #89dceb; }
+        .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo { color: #fab387; }
+        .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s1, .highlight .ss { color: #a6e3a1; }
+        .highlight .na, .highlight .nf, .highlight .nx { color: #89b4fa; }
+        .highlight .nb, .highlight .bp { color: #f9e2af; }
+        .highlight .nd, .highlight .ne, .highlight .nl { color: #f5c2e7; }
+        .highlight .nn, .highlight .nt, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #f9e2af; }
+        .highlight .w { color: #cdd6f4; }
+        .highlight .gu { color: #7c7f93; }
+        .highlight .gd { color: #f38ba8; }
+        .highlight .gi { color: #a6e3a1; }
+
+        /* Footer */
+        .site-footer {
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .post__title { font-size: 2rem; }
+            .page-title { font-size: 1.75rem; }
+            .nav { padding: 0.75rem 1.1rem; }
+            .nav-links { gap: 1rem; }
+            .content { padding: 2rem 1.1rem 3rem; }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <a href="/">Home</a>
-    |
-    <a href="/blog.html">Blog</a>
-    |
-    <a href="/projects.html">Projects</a>
+<header class="site-header">
+    <nav class="nav">
+        <a class="nav-brand" href="/">{{ site.title }}</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/projects.html">Projects</a>
+        </div>
+    </nav>
 </header>
 
-
-<main>
+<main class="content">
     {{ content }}
 </main>
 
-
-<footer>
-    © {{ site.time | date: "%Y" }} Mohrobati
+<footer class="site-footer">
+    &copy; {{ site.time | date: "%Y" }} Mohrobati
 </footer>
 
 </body>
