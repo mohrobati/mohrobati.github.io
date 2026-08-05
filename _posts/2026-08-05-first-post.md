@@ -1,5 +1,6 @@
 ---
 title: The History of ChatGPT
+excerpt: "On November 30, 2022, OpenAI launched a modest 'research preview' called ChatGPT. Within five days it had a million users, and within two months it had become the fastest-growing consumer application in history. This is the story of the decade of research that preceded it, the models that followed, and the moment modern AI went mainstream."
 ---
 
 ## The History of ChatGPT
